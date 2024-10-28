@@ -9,7 +9,7 @@ WORKDIR /test-repo
 #COPY ./test ./test
 COPY ./requirements.txt .
 
+# Make sure the environment is set up as needed
 ENV PYTHONPATH=/test-repo/src
 
 RUN pip install --no-cache-dir -r requirements.txt
-
